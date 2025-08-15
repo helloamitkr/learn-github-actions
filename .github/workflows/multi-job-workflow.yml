@@ -18,7 +18,7 @@ jobs:
         needs: build_jobs_1
         runs-on: ubuntu-latest
         steps:
-        - name: sleep for 30 sec
+        - name: download artifact
           uses: actions/download-artifact@v5
           with:
             name: dragon-text-file
@@ -28,7 +28,7 @@ jobs:
         needs: [build_jobs_1,test_jobs_2]
         runs-on: ubuntu-latest
         steps:
-        - name: sleep for 30 sec
+        - name: download artifact
           uses: actions/download-artifact@v5
           with:
             name: dragon-text-file
