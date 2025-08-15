@@ -6,3 +6,5 @@ jobs:
     steps:
     - name: welcome
       run: echo "hello world for my first"
+    - name: list file
+      run: ls -a
