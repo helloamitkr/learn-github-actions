@@ -9,6 +9,6 @@ jobs:
     - name: install cowsay
       run: sudo apt install cowsay
     - name: writing through cowsay
-      run: cowsay "hello amit"
+      run: cowsay "hello amit" >> test.txt
     - name: list file
       run: ls -a
