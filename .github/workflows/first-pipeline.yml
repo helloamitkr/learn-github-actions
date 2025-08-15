@@ -6,11 +6,10 @@ jobs:
     steps:
     - name: checkout the repo
       uses: actions/checkout@v5
-    - name: install cowsay
-      run: sudo apt install cowsay
-    - name: writing through cowsay
-      run: cowsay "hello amit" >> test.txt
-    - name: print content of test.txt
-      run: cat test.txt
+    - name: install cowsay and write and print 
+      run: |
+        sudo apt install cowsay
+        cowsay "hello amit" >> test.txt
+        cat test.txt
     - name: list file
       run: ls -a
