@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: welcome
+      uses: actions/checkout@v5
+    - name: welcome
       run: echo "hello world for my first"
     - name: list file
       run: ls -a
