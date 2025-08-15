@@ -10,5 +10,7 @@ jobs:
       run: sudo apt install cowsay
     - name: writing through cowsay
       run: cowsay "hello amit" >> test.txt
+    - name: print content of test.txt
+      run: cat test.txt
     - name: list file
       run: ls -a
