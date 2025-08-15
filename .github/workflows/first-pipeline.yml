@@ -2,7 +2,7 @@ name: first-pieline
 on: push
 jobs:
   first_job:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: welcome
       run: echo "hello world for my first"
